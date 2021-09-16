@@ -158,6 +158,27 @@
     </section>
     <section class="my-5">
         <div class="py-5">
+            <h2 class="text-center" id="aboutus">Make my wall
+                <hr class="width:60% margin-left:auto margin-right:auto" />
+            </h2>
+
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="mainwall" style="margin-left:10px">
+                    <div class="designedwall">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-8" style="margin-left:212px">
+                    <p class="py-3"> Want to see illusion of your new wall? then you must try this.</p>
+                    <a href="#" class="btn btn-primary">Try</a>
+                </div>
+
+            </div>
+
+    </section>
+    <section class="my-5">
+        <div class="py-5">
             <h2 class="text-center" id="gallary">Gallery
                 <hr>
             </h2>
@@ -211,7 +232,8 @@
         <br>
         <footer>
             <div>
-                <p class="p-3  bg-dark text-white text-center">  Image Source: Pinterest <br><br> Created By @TeamTryart</p>
+                <p class="p-3  bg-dark text-white text-center"> Image Source: Pinterest <br><br> Created By @TeamTryart
+                </p>
             </div>
         </footer>
         <script type="text/javascript">
