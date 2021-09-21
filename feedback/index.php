@@ -18,12 +18,51 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        <h1>Feedback Form</h1>
+
+
+
+<body style="height:0;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+         <div class="container-fluid">
+             <a class="navbar-brand" href="#">Tryart</a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                 aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                         <a class="nav-link" aria-current="page" href="index.php">Home</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="index.php#aboutus">About Us</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="index.php#ourservice">Our Servicies</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="index.php#gallary">Gallery</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="index.php#contactus">Contact Us</a>
+                     </li>
+
+                 </ul>
+             </div>
+         </div>
+     </nav>
+     <section class="my-5">
+        <div class="py-5">
+            <h2 class="text-center" id="Feedback">Feedback Form
+                <hr class="width:60% margin-left:auto margin-right:auto" />
+            </h2>
+
+        </div>
         <div class="container">
             <div class="wrap">
-                <h2 class="h2-tag">Please help us to serve you better by taking a couple of minutes!</h2><br>
-                <form method="post" action="register.php" class="form-content-section" enctype="multipart/form-data" name="feedbackForm">
+                <p class="py-3">Please help us to serve you better by taking a couple of minutes!</p><br>
+                <form method="post" action="feedback/register.php" class="form-content-section" enctype="multipart/form-data" name="feedbackForm">
                     
                     <div class="form-floating mb-4">
                         <div class="rateyo" style="" id= "rating"
@@ -61,6 +100,39 @@
                 </form>
             </div>
         </div>
+        </section>
+        <section>
+        <div class="py-5">
+            <h2 class="text-center" id="Feedback">Feedback
+                <hr class="width:60% margin-left:auto margin-right:auto" />
+            </h2>
+       </div>
+            <table class="table"><tbody>
+            <?php
+            include('register.php');
+            $sql="select  *from feedback_form";
+            $res=mysqli_query($conn,$sql);
+            while($row=mysqli_fetch_assoc($res)){
+            ?>                <hr class="width:60% margin-left:auto margin-right:auto" /><p>
+Name:<?php
+            $html=$row['Name'];
+            echo $html;?><br>Rating:<?php
+           $html=$row['Rating'];
+            echo $html;?><br>Comment:<?php
+                $html=$row['Feedback'];
+            echo $html;?><br>Image:<?php
+            	$html=$row['Image']; ?><br>
+<img style="height:200px;width:200px;" src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['Image']); ?>" />
+            <?php } ?>
+</div>
+</section>
+
+        <footer>
+            <div>
+                <p class="p-3  bg-dark text-white text-center"> Image Source: Pinterest <br><br> Created By @TeamTryart
+                </p>
+            </div>
+        </footer>
         <script>
         
             $(function (){

@@ -9,7 +9,7 @@ $sname= "localhost";
 $uname= "root";
 $password = "";
 
-$db_name = "feedback_tryart";
+$db_name = "tryart";
 $conn = mysqli_connect($sname, $uname, $password, $db_name);
 /*if (!$conn) {
 	echo "<br>"."Starting Connection failed!";
@@ -48,7 +48,7 @@ if(isset($_POST['submit']))
 	$file_extension = pathinfo($filename, PATHINFO_EXTENSION);
 	if (!in_array($file_extension, $allowed_extension)) 
 	{
-		echo '<script>alert("Select an Image, Only png, jpg, jpeg, gif files are allowed"); window.location.href = "index.php";</script>';
+		echo '<script>alert("Select an Image, Only png, jpg, jpeg, gif files are allowed"); window.location.href = "feedback/index.php";</script>';
 	}
 	else
 	{
@@ -60,27 +60,27 @@ if(isset($_POST['submit']))
        
 		if (empty($_POST['rating'])) 
 		{
-			echo '<script>alert("Please select a rating"); window.location.href = "index.php";</script>';
+			echo '<script>alert("Please select a rating"); window.location.href = "feedback/index.php";</script>';
 		}
     	else if (empty($_POST['name'])) 
 		{
-			echo '<script>alert("Please enter a name"); window.location.href = "index.php";</script>';
+			echo '<script>alert("Please enter a name"); window.location.href = "feedback/index.php";</script>';
 		}
 		else if (!preg_match ("/^[a-zA-z]*$/", $name) ) 
 		{
-	  		echo '<script>alert("Please enter a valid name"); window.location.href = "index.php";</script>';
+	  		echo '<script>alert("Please enter a valid name"); window.location.href = "feedback/index.php";</script>';
 		}
 		else if (empty($_POST['email'])) 
 		{
-			echo '<script>alert("Please enter an email"); window.location.href = "index.php";</script>';
+			echo '<script>alert("Please enter an email"); window.location.href = "feedback/index.php";</script>';
 		}
 		else if (!preg_match("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$^",$email))
 		{ 
-			echo '<script>alert("Please enter a valid email"); window.location.href = "index.php";</script>';
+			echo '<script>alert("Please enter a valid email"); window.location.href = "feedback/index.php";</script>';
 		}
 		else if (!checkEmail($_POST['email'])) 
 		{
-    		echo '<script>alert("Email is already exists"); window.location.href = "index.php";</script>';
+    		echo '<script>alert("Email is already exists"); window.location.href = "feedback/index.php";</script>';
 		}
 		else
 		{	
@@ -92,7 +92,7 @@ if(isset($_POST['submit']))
 			}
 			else
 			{
-				echo '<script>alert("Thank you for your feedback!"); window.location.href = "index.php";</script>';
+				echo '<script>alert("Thank you for your feedback!"); window.location.href = "feedback/index.php";</script>';
 			}
 		}
 	}

@@ -1,5 +1,6 @@
 body {
-    font-family: 'Roboto Slab', serif;
+   font-family: 'Open Sans', sans-serif;
+
 }
 h1{
     text-align: center;
@@ -8,16 +9,15 @@ h1{
     text-transform: uppercase;
     color: black;
     font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: 6px;
     line-height: 1.5;
 }
 .wrap {
     justify-content: center;
-    padding: 2.3em;
     width: 60%;
     margin: 2em auto;
-    background: rgba(1, 14, 21, 0.62);
+
 }
 .h2-tag{
     text-align: center;

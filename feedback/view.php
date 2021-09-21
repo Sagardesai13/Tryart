@@ -2,7 +2,7 @@
 $sname= "localhost";
 $unmae= "root";
 $password = "";
-$db_name = "feedback_tryart";
+$db_name = "tryart";
 $conn = mysqli_connect($sname, $unmae, $password, $db_name);
 /*if (!$conn) {
 echo "<br>"."Starting Connection failed!";

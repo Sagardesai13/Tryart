@@ -46,7 +46,6 @@ INSERT INTO `feedback_form` (`Id`, `Name`, `Email Id`, `Rating`, `Image`, `Feedb
 (1, 'Ajay', 'Ajay123@gmail.com', 4.8, 0x686f6d652e6a7067, 'Excellent'),
 (2, 'aaaa', 'aaaa@gmail.com', 5, 0x696d672e6a7067, 'Nice');
 COMMIT;
-
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
