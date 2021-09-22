@@ -42,10 +42,11 @@
                         <a class="nav-link" href="#aboutus">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#ourservice">Our Servicies</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#gallary">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ourservice">Feedback</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contactus">Contact Us</a>
