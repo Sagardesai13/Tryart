@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="074f6793-c613-43d5-962f-f5c7cf45e30d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feedback/feedback_form.sql" beforeDir="false" afterPath="$PROJECT_DIR$/feedback/feedback_form.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feedback/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/feedback/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feedback/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/feedback/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feedback/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/feedback/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feedback/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/feedback/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="074f6793-c613-43d5-962f-f5c7cf45e30d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
