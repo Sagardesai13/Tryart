@@ -8,8 +8,8 @@ error_reporting(0);
 $sname= "localhost";
 $uname= "root";
 $password = "";
-
 $db_name = "feedback_tryart";
+
 $conn = mysqli_connect($sname, $uname, $password, $db_name);
 /*if (!$conn) {
 	echo "<br>"."Starting Connection failed!";
@@ -50,19 +50,24 @@ if(isset($_POST['submit']))
 	{
 		echo '<script>alert("Select an Image, Only png, jpg, jpeg, gif files are allowed"); window.location.href = "index.php";</script>';
 	}
+	else if (file_exists("uploads/". $_FILES['file']['name'])) 
+	{
+		$filename = $_FILES['file']['name'];
+		echo '<script>alert("Image is already exists"); window.location.href = "index.php";</script>';
+	}
 	else
 	{
 		$filename = $_FILES["file"]["name"];
-    	$tempname = $_FILES["file"]["tmp_name"];
-    	$folder = "uploads/".$filename;
-    	//echo "$folder";
-    	move_uploaded_file($tempname,$folder);
+    		$tempname = $_FILES["file"]["tmp_name"];
+    		$folder = "uploads/".$filename;
+    		//echo "$folder";
+    		move_uploaded_file($tempname,$folder);
        
 		if (empty($_POST['rating'])) 
 		{
 			echo '<script>alert("Please select a rating"); window.location.href = "index.php";</script>';
 		}
-    	else if (empty($_POST['name'])) 
+    		else if (empty($_POST['name'])) 
 		{
 			echo '<script>alert("Please enter a name"); window.location.href = "index.php";</script>';
 		}
