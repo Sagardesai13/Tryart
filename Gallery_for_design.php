@@ -150,7 +150,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 		</div>
 		<div class="gallery-item">
 
-			<input type="submit" name="button" value="img11" class="gallery-image" style="background:url('Designs/img11.jpg');">
+			<input type="submit" name="button" value="img8" class="gallery-image" style="background:url('Designs/img8.jpg');">
 		</div>
 		<div class="gallery-item">
 
@@ -165,7 +165,52 @@ Remove or comment-out the code block below to see how the browser will fall-back
 			<input type="submit" name="button" value="img11" class="gallery-image" style="background:url('Designs/img11.jpg');">
 		</div>
 		<div class="gallery-item">
-			<input type="submit" name="button" value="img9" class="gallery-image" style="background:url('Designs/img9.jpg');">
+			<input type="submit" name="button" value="img12" class="gallery-image" style="background:url('Designs/img12.jpg');">
+		</div>
+		<div class="gallery-item">
+			<input type="submit" name="button" value="img21" class="gallery-image" style="background:url('Designs/img21.jpg');">
+		</div>
+		<div class="gallery-item">
+			<input type="submit" name="button" value="img22" class="gallery-image" style="background:url('Designs/img22.jpg');">
+		</div>
+		<div class="gallery-item">
+			<input type="submit" name="button" value="img25" class="gallery-image" style="background:url('Designs/img25.jpg');">
+		</div>
+		<div class="gallery-item">
+			<input type="submit" name="button" value="img26" class="gallery-image" style="background:url('Designs/img26.jpg');">
+		</div>
+		<div class="gallery-item">
+			<input type="submit" name="button" value="img30" class="gallery-image" style="background:url('Designs/img30.jpg');">
+		</div>
+		<div class="gallery-item">
+			<input type="submit" name="button" value="img31" class="gallery-image" style="background:url('Designs/img31.jpg');">
+		</div>
+		<div class="gallery-item">
+			<input type="submit" name="button" value="img33" class="gallery-image" style="background:url('Designs/img33.jpg');">
+		</div>
+		<div class="gallery-item">
+			<input type="submit" name="button" value="img35" class="gallery-image" style="background:url('Designs/img35.jpg');">
+		</div>
+		<div class="gallery-item">
+			<input type="submit" name="button" value="img37" class="gallery-image" style="background:url('Designs/img37.jpg');">
+		</div>
+		<div class="gallery-item">
+			<input type="submit" name="button" value="img41" class="gallery-image" style="background:url('Designs/img41.jpg');">
+		</div>
+		<div class="gallery-item">
+			<input type="submit" name="button" value="img42" class="gallery-image" style="background:url('Designs/img42.jpg');">
+		</div>
+		<div class="gallery-item">
+			<input type="submit" name="button" value="img43" class="gallery-image" style="background:url('Designs/img43.jpg');">
+		</div>
+		<div class="gallery-item">
+			<input type="submit" name="button" value="img46" class="gallery-image" style="background:url('Designs/img46.jpg');">
+		</div>
+		<div class="gallery-item">
+			<input type="submit" name="button" value="img47" class="gallery-image" style="background:url('Designs/img47.jpg');">
+		</div>
+		<div class="gallery-item">
+			<input type="submit" name="button" value="img48" class="gallery-image" style="background:url('Designs/img48.jpg');">
 		</div>
 	</div>
 </form>
