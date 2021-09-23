@@ -42,7 +42,7 @@
                     
                     <div class="form-floating mb-4">
                         <input type="text" name="name" class="form-control" id="nameErr" placeholder="Enter Name...">
-                        <label for="floatingPassword">Name</label>
+                        <label for="floatingName">Name</label>
                     </div>
                     
                     <div class="form-floating mb-4">
