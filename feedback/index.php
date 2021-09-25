@@ -33,19 +33,20 @@
              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                      <li class="nav-item">
-                         <a class="nav-link" aria-current="page" href="index.php">Home</a>
+                         <a class="nav-link" aria-current="page" href="../index.php">Home</a>
                      </li>
                      <li class="nav-item">
-                         <a class="nav-link" href="index.php#aboutus">About Us</a>
+                         <a class="nav-link" href="../index.php#aboutus">About Us</a>
+                     </li>
+                     
+                     <li class="nav-item">
+                         <a class="nav-link" href="../index.php#gallary">Gallery</a>
                      </li>
                      <li class="nav-item">
-                         <a class="nav-link" href="index.php#ourservice">Our Servicies</a>
+                         <a class="nav-link" href="#">Feedback</a>
                      </li>
                      <li class="nav-item">
-                         <a class="nav-link" href="index.php#gallary">Gallery</a>
-                     </li>
-                     <li class="nav-item">
-                         <a class="nav-link" href="index.php#contactus">Contact Us</a>
+                         <a class="nav-link" href="../index.php#contactus">Contact Us</a>
                      </li>
 
                  </ul>

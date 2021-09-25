@@ -46,7 +46,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#ourservice">Feedback</a>
+                        <a class="nav-link" href="feedback/index.php">Feedback</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contactus">Contact Us</a>
@@ -179,7 +179,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-8" style="margin-left:212px">
                     <p class="py-3"> Want to see illusion of your new wall? then you must try this.</p>
-                    <a href="#" class="btn btn-primary">Try</a>
+                    <a href="wall/index.php" class="btn btn-primary">Try</a>
                 </div>
 
             </div>
