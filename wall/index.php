@@ -224,7 +224,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             Select Design
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Select from our Design</a></li>
+                            <li><a class="dropdown-item" href="Gallery_for_design.php">Select from our Design</a></li>
                             <li><input type="file" id="design_img" name="design_img">
                                 <label for="design_img" class="btn btn-large" style="text-align: center;
                             font-weight: bold;
