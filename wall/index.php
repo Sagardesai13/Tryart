@@ -21,7 +21,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     	$tempname = $_FILES["file"]["tmp_name"];
         $temp1 = $_FILES["design_img"]["tmp_name"];
 
-    	$folder = "uploads/".$var3.$filename;
+        $folder = "uploads/".$var3.$filename;
         $folder1 = "uploads/".$var3.$design_name;
    
     	$dst_db = "uploads/".$var3.$filename;
@@ -29,8 +29,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         move_uploaded_file($tempname,$folder);
         move_uploaded_file($temp1,$folder1);
-
-
 
         $query ="insert into `wall` (`image`,`design`)values('$dst_db','$dst_db1')";
 		$result = mysqli_query($conn, $query);
