@@ -20,10 +20,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     	$tempname = $_FILES["file"]["tmp_name"];
         $temp1 = $_FILES["design_img"]["tmp_name"];
         $folder = "uploads/".$filename;
-        $folder1 = "uploads/".$design_name;
+        $folder1 = "Designs/".$design_name;
 
     	$dst_db = "uploads/".$filename;
-        $dst_db1 = "uploads/".$design_name;
+        $dst_db1 = "Designs/".$design_name;
 
         move_uploaded_file($tempname,$folder);
         move_uploaded_file($temp1,$folder1);
@@ -205,8 +205,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             </div>
             <div class="col-3" id="info">
-                <form method="post" action="#" class="form-content-section" enctype="multipart/form-data"
-                    name="feedbackForm">
+                <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>" class="form-content-section"
+                    enctype="multipart/form-data" name="feedbackForm">
+
+
 
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
@@ -222,8 +224,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             color: white;">Select from this device</label>
                             </li>
                         </ul>
-                    </div>
 
+                    </div>
                     <div class="file-upload-section">
                         <input type="file" id="foto-file" name="file">
                         <label for="foto-file" type="submit" class="btn btn-large" style="height:13px;
@@ -231,7 +233,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                 font-weight: bold;
                                 color: white;" name="submit">Select Image</label>
                     </div>
-
                     <div class="upload">
                         <button type="submit" name="submit" id="upload">Make Your Wall</button>
                     </div>

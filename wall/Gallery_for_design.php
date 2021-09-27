@@ -105,123 +105,122 @@ Remove or comment-out the code block below to see how the browser will fall-back
 }
 </style>
 
-<body>
+<<body>
     <div class="containers">
         <form>
             <div class="gallery">
                 <div class="gallery-item">
 
-                    <input type="button" onclick="test('home.jpg')"  name="button" value="home" class="gallery-image"
-                        style="background:url('../Designs/home.jpg');">
+                    <input type="button" onclick="test('home_design.jpg')"  name="button" value="home" class="gallery-image"
+                        style="background:url('Designs/home_design.jpg');">
                 </div>
                 <div class="gallery-item">
 
-                    <input type="button" onclick="test('img2.jpg')" name="button" value="img2" class="gallery-image"
-                        style="background:url('../Designs/img2.jpg');">
+                    <input type="button" onclick="test('img2_design.jpg')" name="button" value="img2" class="gallery-image"
+                        style="background:url('Designs/img2_design.jpg');">
                 </div>
                 <div class="gallery-item">
 
-                    <input type="button" onclick="test('img4.jpg')" name="button" value="img4" class="gallery-image"
-                        style="background:url('../Designs/img4.jpg');">
+                    <input type="button" onclick="test('img4_design.jpg')" name="button" value="img4" class="gallery-image"
+                        style="background:url('Designs/img4_design.jpg');">
                 </div>
                 <div class="gallery-item">
 
-                    <input type="button" onclick="test('img5.jpg')" name="button" value="img5" class="gallery-image"
-                        style="background:url('../Designs/img5.jpg');">
+                    <input type="button" onclick="test('img5_design.jpg')" name="button" value="img5" class="gallery-image"
+                        style="background:url('Designs/img5_design.jpg');">
                 </div>
                 <div class="gallery-item">
 
-                    <input type="button" onclick="test('img7.jpg')" name="button" value="img7" class="gallery-image"
-                        style="background:url('../Designs/img7.jpg');">
+                    <input type="button" onclick="test('img7_design.jpg')" name="button" value="img7" class="gallery-image"
+                        style="background:url('Designs/img7_design.jpg');">
                 </div>
                 <div class="gallery-item">
 
-                    <input type="button" onclick="test('img8.jpg')" name="button" value="img8" class="gallery-image"
-                        style="background:url('../Designs/img8.jpg');">
+                    <input type="button" onclick="test('img8_design.jpg')" name="button" value="img8" class="gallery-image"
+                        style="background:url('Designs/img8_design.jpg');">
                 </div>
                 <div class="gallery-item">
 
-                    <input type="button" onclick="test('img9.jpg')" name="button" value="img9" class="gallery-image"
-                        style="background:url('../Designs/img9.jpg');">
+                    <input type="button" onclick="test('img9_design.jpg')" name="button" value="img9" class="gallery-image"
+                        style="background:url('Designs/img9_design.jpg');">
                 </div>
                 <div class="gallery-item">
 
-                    <input type="button" onclick="test('img10.jpg')" name="button" value="img10" class="gallery-image"
-                        style="background:url('../Designs/img10.jpg');">
+                    <input type="button" onclick="test('img10_design.jpg')" name="button" value="img10" class="gallery-image"
+                        style="background:url('Designs/img10_design.jpg');">
                 </div>
                 <div class="gallery-item">
 
-                    <input type="button" onclick="test('img11.jpg')" name="button" value="img11" class="gallery-image"
-                        style="background:url('../Designs/img11.jpg');">
+                    <input type="button" onclick="test('img11_design.jpg')" name="button" value="img11" class="gallery-image"
+                        style="background:url('Designs/img11_design.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="button" onclick="test('img12.jpg')" name="button" value="img12" class="gallery-image"
-                        style="background:url('../Designs/img12.jpg');">
+                    <input type="button" onclick="test('img12_design.jpg')" name="button" value="img12" class="gallery-image"
+                        style="background:url('Designs/img12_design.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="button" onclick="test('img21.jpg')" name="button" value="img21" class="gallery-image"
-                        style="background:url('../Designs/img21.jpg');">
+                    <input type="button" onclick="test('img21_design.jpg')" name="button" value="img21" class="gallery-image"
+                        style="background:url('Designs/img21_design.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="button" onclick="test('img22.jfif')" name="button" value="img22" class="gallery-image"
-                        style="background:url('../Designs/img22.jfif');">
+                    <input type="button" onclick="test('img22_design.jfif')" name="button" value="img22" class="gallery-image"
+                        style="background:url('Designs/img22_design.jfif');">
                 </div>
                 <div class="gallery-item">
-                    <input type="button" onclick="test('img25.jpg')" name="button" value="img25" class="gallery-image"
-                        style="background:url('../Designs/img25.jpg');">
+                    <input type="button" onclick="test('img25_design.jpg')" name="button" value="img25" class="gallery-image"
+                        style="background:url('Designs/img25_design.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="button" onclick="test('img26.jpg')" name="button" value="img26" class="gallery-image"
-                        style="background:url('../Designs/img26.jpg');">
+                    <input type="button" onclick="test('img26_design.jpg')" name="button" value="img26" class="gallery-image"
+                        style="background:url('Designs/img26_design.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="button" onclick="test('img30.jpg')" name="button" value="img30" class="gallery-image"
-                        style="background:url('../Designs/img30.jpg');">
+                    <input type="button" onclick="test('img30_design.jpg')" name="button" value="img30" class="gallery-image"
+                        style="background:url('Designs/img30_design.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="button" onclick="test('img31.jpg')" name="button" value="img31" class="gallery-image"
-                        style="background:url('../Designs/img31.jpg');">
+                    <input type="button" onclick="test('img31_design.jpg')" name="button" value="img31" class="gallery-image"
+                        style="background:url('Designs/img31_design.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="button" onclick="test('img33.jpg')" name="button" value="img33" class="gallery-image"
-                        style="background:url('../Designs/img33.jpg');">
+                    <input type="button" onclick="test('img33_design.jpg')" name="button" value="img33" class="gallery-image"
+                        style="background:url('Designs/img33_design.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="button" onclick="test('img35.jpg')" name="button" value="img35" class="gallery-image"
-                        style="background:url('../Designs/img35.jpg');">
+                    <input type="button" onclick="test('img35_design.jpg')" name="button" value="img35" class="gallery-image"
+                        style="background:url('Designs/img35_design.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="button" onclick="test('img37.jpg')" name="button" value="img37" class="gallery-image"
-                        style="background:url('../Designs/img37.jpg');">
+                    <input type="button" onclick="test('img37_design.jpg')" name="button" value="img37" class="gallery-image"
+                        style="background:url('Designs/img37_design.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="button" onclick="test('img41.jpg')" name="button" value="img41" class="gallery-image"
-                        style="background:url('../Designs/img41.jpg');">
+                    <input type="button" onclick="test('img41_design.jpg')" name="button" value="img41" class="gallery-image"
+                        style="background:url('Designs/img41_design.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="button" onclick="test('img42.jpg')" name="button" value="img42" class="gallery-image"
-                        style="background:url('../Designs/img42.jpg');">
+                    <input type="button" onclick="test('img42_design.jpg')" name="button" value="img42" class="gallery-image"
+                        style="background:url('Designs/img42_design.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="button" onclick="test('img43.jpg')" name="button" value="img43" class="gallery-image"
-                        style="background:url('../Designs/img43.jpg');">
+                    <input type="button" onclick="test('img43_design.jpg')" name="button" value="img43" class="gallery-image"
+                        style="background:url('Designs/img43_design.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="button" onclick="test('img46.jpg')" name="button" value="img46" class="gallery-image"
-                        style="background:url('../Designs/img46.jpg');">
+                    <input type="button" onclick="test('img46_design.jpg')" name="button" value="img46" class="gallery-image"
+                        style="background:url('Designs/img46_design.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="button" onclick="test('img47.jpg')" name="button" value="img47" class="gallery-image"
-                        style="background:url('../Designs/img47.jpg');">
+                    <input type="button" onclick="test('img47_design.jpg')" name="button" value="img47" class="gallery-image"
+                        style="background:url('Designs/img47_design.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="button" onclick="test('img48.jpg')" name="button" value="img48" class="gallery-image"
-                        style="background:url('../Designs/img48.jpg');">
+                    <input type="button" onclick="test('img48_design.jpg')" name="button" value="img48" class="gallery-image"
+                        style="background:url('Designs/img48_design.jpg');">
                 </div>
             </div>
         </form>
-    </div>
-    <script>
+    </div>    <script>
 
             function test(name)
             {
