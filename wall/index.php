@@ -11,8 +11,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         $filename = $_FILES["file"]["name"];
 
-       //$design_name = $_FILES["design_img"]["name"];
        $design_name=$_POST["field"];
+       if(empty($design_name))
+       {
+            $design_name = $_FILES["design_img"]["name"];
+       }
 
     	$tempname = $_FILES["file"]["tmp_name"];
         $temp1 = $_FILES["design_img"]["tmp_name"];
@@ -204,14 +207,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="col-3" id="info">
                 <form method="post" action="#" class="form-content-section" enctype="multipart/form-data"
                     name="feedbackForm">
-                    <div class="file-upload-section">
-                        <input type="file" id="foto-file" name="file">
-                        <label for="foto-file" type="submit" class="btn btn-large" style="height:13px;
-                        margin-top: -18px;
-                                font-weight: bold;
-                                color: white;" name="submit">Select Image</label>
-                    </div>
-
 
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
@@ -227,8 +222,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             color: white;">Select from this device</label>
                             </li>
                         </ul>
-
                     </div>
+
+                    <div class="file-upload-section">
+                        <input type="file" id="foto-file" name="file">
+                        <label for="foto-file" type="submit" class="btn btn-large" style="height:13px;
+                        margin-top: -18px;
+                                font-weight: bold;
+                                color: white;" name="submit">Select Image</label>
+                    </div>
+
                     <div class="upload">
                         <button type="submit" name="submit" id="upload">Make Your Wall</button>
                     </div>
