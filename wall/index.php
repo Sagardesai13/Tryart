@@ -245,8 +245,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <div class="help">
                     <a>Help</a>
                 </div>
-
-
+                
                 <div class="design_name">
                     Design
                     <div class="design">

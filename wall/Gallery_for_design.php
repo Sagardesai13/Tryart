@@ -104,7 +104,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 <body>
     <div class="containers">
-        <form action="get_design.php" method="post">
+        <form action="index.php" method="post">
 
             <div class="gallery">
                 <div class="gallery-item">
