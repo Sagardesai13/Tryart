@@ -219,8 +219,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             Select Design
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="Gallery_for_design.php">Select from our Design</a> <input type="hidden" id="hiddenfield" name="field" value=""></li>
-                            <li><input type="file" id="design_img"  name="design_img">
+                            <li><a class="dropdown-item" href="Gallery_for_design.php">Select from our Design</a> <input
+                                    type="hidden" id="hiddenfield" name="field" value=""></li>
+                            <li><input type="file" id="design_img" name="design_img">
                                 <label for="design_img" class="btn btn-large" style="text-align: center;
                             font-weight: bold;
                             color: white;">Select from this device</label>
@@ -237,7 +238,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <div class="help">
                     <a>Help</a>
                 </div>
-                
+
                 <div class="design_name">
                     Design
                     <div class="design">
@@ -283,10 +284,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         wall.remove();
         jcrop.destroy();
     }
-    function respond()
-    {
+
+    function respond() {
         console.log("=======================");
-document.getElementById("hiddenfield").value=localStorage.getItem('buttonname');
+        document.getElementById("hiddenfield").value = localStorage.getItem('buttonname');
         console.log(document.getElementById("hiddenfield").value);
         console.log("========================================");
     }
