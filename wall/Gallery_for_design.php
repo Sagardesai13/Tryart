@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html lang="en">
 
 <head>
@@ -104,118 +107,127 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 <body>
     <div class="containers">
-        <form action="index.php" method="post">
-
+        <form>
             <div class="gallery">
                 <div class="gallery-item">
 
-                    <input type="submit" name="button" value="home" class="gallery-image"
+                    <input type="button" onclick="test('home.jpg')"  name="button" value="home" class="gallery-image"
                         style="background:url('../Designs/home.jpg');">
                 </div>
                 <div class="gallery-item">
 
-                    <input type="submit" name="button" value="img2" class="gallery-image"
+                    <input type="button" onclick="test('img2.jpg')" name="button" value="img2" class="gallery-image"
                         style="background:url('../Designs/img2.jpg');">
                 </div>
                 <div class="gallery-item">
 
-                    <input type="submit" name="button" value="img4" class="gallery-image"
+                    <input type="button" onclick="test('img4.jpg')" name="button" value="img4" class="gallery-image"
                         style="background:url('../Designs/img4.jpg');">
                 </div>
                 <div class="gallery-item">
 
-                    <input type="submit" name="button" value="img5" class="gallery-image"
+                    <input type="button" onclick="test('img5.jpg')" name="button" value="img5" class="gallery-image"
                         style="background:url('../Designs/img5.jpg');">
                 </div>
                 <div class="gallery-item">
 
-                    <input type="submit" name="button" value="img7" class="gallery-image"
+                    <input type="button" onclick="test('')" name="button" value="img7" class="gallery-image"
                         style="background:url('../Designs/img7.jpg');">
                 </div>
                 <div class="gallery-item">
 
-                    <input type="submit" name="button" value="img8" class="gallery-image"
+                    <input type="button" onclick="test('')" name="button" value="img8" class="gallery-image"
                         style="background:url('../Designs/img8.jpg');">
                 </div>
                 <div class="gallery-item">
 
-                    <input type="submit" name="button" value="img9" class="gallery-image"
+                    <input type="button" onclick="test('')" name="button" value="img9" class="gallery-image"
                         style="background:url('../Designs/img9.jpg');">
                 </div>
                 <div class="gallery-item">
 
-                    <input type="submit" name="button" value="img10" class="gallery-image"
+                    <input type="button" onclick="test('')" name="button" value="img10" class="gallery-image"
                         style="background:url('../Designs/img10.jpg');">
                 </div>
                 <div class="gallery-item">
 
-                    <input type="submit" name="button" value="img11" class="gallery-image"
+                    <input type="button" onclick="test('')" name="button" value="img11" class="gallery-image"
                         style="background:url('../Designs/img11.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="submit" name="button" value="img12" class="gallery-image"
+                    <input type="button" onclick="test('')" name="button" value="img12" class="gallery-image"
                         style="background:url('../Designs/img12.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="submit" name="button" value="img21" class="gallery-image"
+                    <input type="button" onclick="test('')" name="button" value="img21" class="gallery-image"
                         style="background:url('../Designs/img21.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="submit" name="button" value="img22" class="gallery-image"
+                    <input type="button" onclick="test('')" name="button" value="img22" class="gallery-image"
                         style="background:url('../Designs/img22.jfif');">
                 </div>
                 <div class="gallery-item">
-                    <input type="submit" name="button" value="img25" class="gallery-image"
+                    <input type="button" onclick="test('')" name="button" value="img25" class="gallery-image"
                         style="background:url('../Designs/img25.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="submit" name="button" value="img26" class="gallery-image"
+                    <input type="button" onclick="test('')" name="button" value="img26" class="gallery-image"
                         style="background:url('../Designs/img26.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="submit" name="button" value="img30" class="gallery-image"
+                    <input type="button" onclick="test('')" name="button" value="img30" class="gallery-image"
                         style="background:url('../Designs/img30.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="submit" name="button" value="img31" class="gallery-image"
+                    <input type="button" onclick="test('')" name="button" value="img31" class="gallery-image"
                         style="background:url('../Designs/img31.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="submit" name="button" value="img33" class="gallery-image"
+                    <input type="button" onclick="test('')" name="button" value="img33" class="gallery-image"
                         style="background:url('../Designs/img33.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="submit" name="button" value="img35" class="gallery-image"
+                    <input type="button" onclick="test('')" name="button" value="img35" class="gallery-image"
                         style="background:url('../Designs/img35.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="submit" name="button" value="img37" class="gallery-image"
+                    <input type="button" onclick="test('')" name="button" value="img37" class="gallery-image"
                         style="background:url('../Designs/img37.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="submit" name="button" value="img41" class="gallery-image"
+                    <input type="button" onclick="test('')" name="button" value="img41" class="gallery-image"
                         style="background:url('../Designs/img41.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="submit" name="button" value="img42" class="gallery-image"
+                    <input type="button" onclick="test('')" name="button" value="img42" class="gallery-image"
                         style="background:url('../Designs/img42.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="submit" name="button" value="img43" class="gallery-image"
+                    <input type="button" onclick="test('')" name="button" value="img43" class="gallery-image"
                         style="background:url('../Designs/img43.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="submit" name="button" value="img46" class="gallery-image"
+                    <input type="button" onclick="test('')" name="button" value="img46" class="gallery-image"
                         style="background:url('../Designs/img46.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="submit" name="button" value="img47" class="gallery-image"
+                    <input type="button" onclick="test('')" name="button" value="img47" class="gallery-image"
                         style="background:url('../Designs/img47.jpg');">
                 </div>
                 <div class="gallery-item">
-                    <input type="submit" name="button" value="img48" class="gallery-image"
+                    <input type="button" onclick="test('')" name="button" value="img48" class="gallery-image"
                         style="background:url('../Designs/img48.jpg');">
                 </div>
             </div>
         </form>
     </div>
+    <script>
+
+            function test(name)
+            {
+                console.log("Working");
+                localStorage.setItem("buttonname",name);
+                window.location.href="http://localhost:8020/tryart/wall/index.php";
+            }
+
+    </script>

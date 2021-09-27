@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="074f6793-c613-43d5-962f-f5c7cf45e30d" name="Changes" comment="" />
+    <list default="true" id="074f6793-c613-43d5-962f-f5c7cf45e30d" name="Changes" comment="captcha">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wall/Gallery_for_design.php" beforeDir="false" afterPath="$PROJECT_DIR$/wall/Gallery_for_design.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wall/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wall/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,6 +64,9 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.php" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

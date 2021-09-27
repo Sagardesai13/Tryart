@@ -8,24 +8,19 @@ if (!$conn){
 }
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-	
-
-        $var1 = rand(1111,9999); 
-        $var2 = rand(1111,9999);
-        $var3 = $var1.$var2; 
-        $var3 = md5($var3);
 
         $filename = $_FILES["file"]["name"];
-        $design_name = $_FILES["design_img"]["name"];
+
+       //$design_name = $_FILES["design_img"]["name"];
+       $design_name=$_POST["field"];
 
     	$tempname = $_FILES["file"]["tmp_name"];
         $temp1 = $_FILES["design_img"]["tmp_name"];
+        $folder = "uploads/".$filename;
+        $folder1 = "uploads/".$design_name;
 
-        $folder = "uploads/".$var3.$filename;
-        $folder1 = "uploads/".$var3.$design_name;
-   
-    	$dst_db = "uploads/".$var3.$filename;
-        $dst_db1 = "uploads/".$var3.$design_name;
+    	$dst_db = "uploads/".$filename;
+        $dst_db1 = "uploads/".$design_name;
 
         move_uploaded_file($tempname,$folder);
         move_uploaded_file($temp1,$folder1);
@@ -224,18 +219,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             Select Design
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="Gallery_for_design.php">Select from our Design</a></li>
-                            <li><input type="file" id="design_img" name="design_img">
+                            <li><a class="dropdown-item" href="Gallery_for_design.php">Select from our Design</a> <input type="hidden" id="hiddenfield" name="field" value=""></li>
+                            <li><input type="file" id="design_img"  name="design_img">
                                 <label for="design_img" class="btn btn-large" style="text-align: center;
                             font-weight: bold;
                             color: white;">Select from this device</label>
                             </li>
                         </ul>
 
-
                     </div>
-
-
                     <div class="upload">
                         <button type="submit" name="submit" id="upload">Make Your Wall</button>
                     </div>
@@ -269,7 +261,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             var blendImg = new Image();
             blendImg.onload = function() {
                 Pixastic.process(img, "blend", {
-                    amount: 2,
+                    amount: 3,
                     mode: "multiply",
                     rect: {
                         left: left,
@@ -291,6 +283,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         wall.remove();
         jcrop.destroy();
     }
+    function respond()
+    {
+        console.log("=======================");
+document.getElementById("hiddenfield").value=localStorage.getItem('buttonname');
+        console.log(document.getElementById("hiddenfield").value);
+        console.log("========================================");
+    }
+    respond();
     </script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
