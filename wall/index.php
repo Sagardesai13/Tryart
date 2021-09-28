@@ -11,10 +11,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         $filename = $_FILES["file"]["name"];
 
-       $design_name=$_POST["field"];
+        $design_name = $_FILES["design_img"]["name"];
+       
        if(empty($design_name))
        {
-            $design_name = $_FILES["design_img"]["name"];
+            $design_name=$_POST["field"];
        }
 
     	$tempname = $_FILES["file"]["tmp_name"];
