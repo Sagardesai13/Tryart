@@ -65,20 +65,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     #image {
         height: 510px;
-        /*background: black;*/
-        background-color: #616263;
     }
 
     .design {
         height: 259px;
-        background-color: #616263;
     }
 
     .container {
         padding: 15px;
         height: 540px;
         background-color: white;
-        margin-top: 50px;
+        margin-top: 45px;
+        margin-bottom: 60px;
     }
 
     .file-upload-section {
@@ -187,8 +185,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         max-height: 440px;
         max-width: 360px;
         z-index: 1;
-        margin-left: -20px;
-        margin-top: -5px;
+        /* margin-left: -20px;
+        margin-top: -5px;*/
     }
 
     #image {
@@ -199,8 +197,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     #image1 {
         margin-left: 700px;
         margin-top: -510px;
-        /*background-color: black;*/
-        background-color: #616263;
         height: 507px;
     }
     </style>
@@ -237,10 +233,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         </div>
     </nav>
 
-    <div class="container" style="margin-top: 5px;">
+    <div class="container">
         <div class="row">
             <div class="col-4" id="image" style="margin-left:30px;">
-                <h3 style="text-align: center; color: white;">Your Selected Image</h3>
+                <h3 style="text-align: center">Your Selected Wall</h3>
                 <div class="col-5">
 
                     <?php
@@ -277,7 +273,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         <label for="foto-file" type="submit" class="btn btn-large" style="height:13px;
                             margin-top: -18px;
                             font-weight: bold; text-align: center;
-                        color: white;" name="submit">Select Image</label>
+                        color: white;" name="submit">Select Wall</label>
                     </div>
                     <div class="upload">
                         <button type="submit" name="submit" id="upload">Make Your Wall</button>
@@ -296,7 +292,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <div class="col-4" id="image1" style=" ">
                 <div>
-                    <h3 style="text-align: center; color: white;">Your Design</h3>
+                    <h3 style="text-align: center;">Your Design</h3>
                 </div>
             </div>
         </div>
