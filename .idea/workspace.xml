@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="074f6793-c613-43d5-962f-f5c7cf45e30d" name="Changes" comment="help" />
+    <list default="true" id="074f6793-c613-43d5-962f-f5c7cf45e30d" name="Changes" comment="Gallery" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +39,6 @@
       <recent name="C:\xampp\htdocs\Tryart" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Tryart\wall" />
       <recent name="C:\xampp\htdocs\Tryart\image" />
     </key>
   </component>
@@ -59,28 +58,7 @@
       <option name="project" value="LOCAL" />
       <updated>1632413349715</updated>
     </task>
-    <task id="LOCAL-00002" summary="captcha">
-      <created>1632678399097</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1632678399097</updated>
-    </task>
-    <task id="LOCAL-00003" summary="captcha">
-      <created>1633008355219</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1633008355219</updated>
-    </task>
-    <task id="LOCAL-00004" summary="help">
-      <created>1633008594100</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1633008594100</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -100,8 +78,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Gallery" />
-    <MESSAGE value="captcha" />
-    <MESSAGE value="help" />
-    <option name="LAST_COMMIT_MESSAGE" value="help" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gallery" />
   </component>
 </project>

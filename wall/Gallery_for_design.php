@@ -103,7 +103,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 }
 </style>
 
-<body>
+<<body>
     <div class="containers">
         <form>
             <div class="gallery">
@@ -218,14 +218,13 @@ Remove or comment-out the code block below to see how the browser will fall-back
                 </div>
             </div>
         </form>
-    </div>
-    <script>
+    </div>    <script>
 
             function test(name)
             {
                 console.log("Working");
                 localStorage.setItem("buttonname",name);
-                window.location.href="http://localhost:8020/tryart/wall/index.php";
+                window.location.href="http://localhost/Tryart/wall/index.php";
             }
 
     </script>
