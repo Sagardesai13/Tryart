@@ -1,37 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="074f6793-c613-43d5-962f-f5c7cf45e30d" name="Changes" comment="captcha">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/home.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img22.jfif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img25.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img26.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img31.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img33.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img35.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img37.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img41.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img42.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img43.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img46.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img47.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img48.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Designs/img9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wall/Gallery_for_design.php" beforeDir="false" afterPath="$PROJECT_DIR$/wall/Gallery_for_design.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wall/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wall/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wall/uploads/img2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wall/uploads/img2.jpg" afterDir="false" />
-    </list>
+    <list default="true" id="074f6793-c613-43d5-962f-f5c7cf45e30d" name="Changes" comment="help" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +66,21 @@
       <option name="project" value="LOCAL" />
       <updated>1632678399097</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="captcha">
+      <created>1633008355219</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1633008355219</updated>
+    </task>
+    <task id="LOCAL-00004" summary="help">
+      <created>1633008594100</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1633008594100</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -117,6 +101,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Gallery" />
     <MESSAGE value="captcha" />
-    <option name="LAST_COMMIT_MESSAGE" value="captcha" />
+    <MESSAGE value="help" />
+    <option name="LAST_COMMIT_MESSAGE" value="help" />
   </component>
 </project>
