@@ -3,8 +3,34 @@
   <component name="ChangeListManager">
     <list default="true" id="074f6793-c613-43d5-962f-f5c7cf45e30d" name="Changes" comment="captcha">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/home.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img22.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img47.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Designs/img9.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/wall/Gallery_for_design.php" beforeDir="false" afterPath="$PROJECT_DIR$/wall/Gallery_for_design.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wall/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wall/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wall/uploads/img2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wall/uploads/img2.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +69,7 @@
       <recent name="C:\xampp\htdocs\Tryart" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Tryart\wall" />
       <recent name="C:\xampp\htdocs\Tryart\image" />
     </key>
   </component>
@@ -62,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632413349715</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="captcha">
+      <created>1632678399097</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1632678399097</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -82,6 +116,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Gallery" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gallery" />
+    <MESSAGE value="captcha" />
+    <option name="LAST_COMMIT_MESSAGE" value="captcha" />
   </component>
 </project>

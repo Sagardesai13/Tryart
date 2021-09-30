@@ -9,24 +9,30 @@ if (!$conn){
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-        $filename = $_FILES["file"]["name"];
+    $filename = $_FILES["file"]["name"];
 
-       //$design_name = $_FILES["design_img"]["name"];
        $design_name=$_POST["field"];
+       if(empty($design_name))
+       {
+       
+            $design_name = $_FILES["design_img"]["name"];
+       }
+       else{
+            $tempname = $_FILES["file"]["tmp_name"];
+            $temp1 = $_FILES["design_img"]["tmp_name"];
+            }
+            $folder = "uploads/".$filename;
+            $folder1 = "Designs/".$design_name;
 
-    	$tempname = $_FILES["file"]["tmp_name"];
-        $temp1 = $_FILES["design_img"]["tmp_name"];
-        $folder = "uploads/".$filename;
-        $folder1 = "uploads/".$design_name;
-
-    	$dst_db = "uploads/".$filename;
-        $dst_db1 = "uploads/".$design_name;
+            $dst_db = "uploads/".$filename;
+            $dst_db1 = "Designs/".$design_name;
+       
 
         move_uploaded_file($tempname,$folder);
         move_uploaded_file($temp1,$folder1);
-
+    
         $query ="insert into `wall` (`image`,`design`)values('$dst_db','$dst_db1')";
-		$result = mysqli_query($conn, $query);
+        $result = mysqli_query($conn, $query);
     }
 ?>
 
@@ -184,6 +190,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         max-height: 510px;
         z-index: 1;
     }
+
+    
     </style>
 </head>
 
@@ -202,15 +210,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             </div>
             <div class="col-3" id="info">
-                <form method="post" action="#" class="form-content-section" enctype="multipart/form-data"
+                <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>" class="form-content-section" enctype="multipart/form-data"
                     name="feedbackForm">
-                    <div class="file-upload-section">
-                        <input type="file" id="foto-file" name="file">
-                        <label for="foto-file" type="submit" class="btn btn-large" style="height:13px;
-                        margin-top: -18px;
-                                font-weight: bold;
-                                color: white;" name="submit">Select Image</label>
-                    </div>
+                    
 
 
                     <div class="dropdown">
@@ -219,14 +221,22 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             Select Design
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="Gallery_for_design.php">Select from our Design</a> <input type="hidden" id="hiddenfield" name="field" value=""></li>
-                            <li><input type="file" id="design_img"  name="design_img">
+                            <li><a class="dropdown-item" href="Gallery_for_design.php">Select from our Design</a> <input
+                                    type="hidden" id="hiddenfield" name="field" value=""></li>
+                            <li><input type="file" id="design_img" name="design_img">
                                 <label for="design_img" class="btn btn-large" style="text-align: center;
                             font-weight: bold;
                             color: white;">Select from this device</label>
                             </li>
                         </ul>
 
+                    </div>
+                    <div class="file-upload-section">
+                        <input type="file" id="foto-file" name="file">
+                        <label for="foto-file" type="submit" class="btn btn-large" style="height:13px;
+                        margin-top: -18px;
+                                font-weight: bold;
+                                color: white;" name="submit">Select Image</label>
                     </div>
                     <div class="upload">
                         <button type="submit" name="submit" id="upload">Make Your Wall</button>
@@ -237,7 +247,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <div class="help">
                     <a>Help</a>
                 </div>
-
 
                 <div class="design_name">
                     Design
@@ -262,7 +271,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             var blendImg = new Image();
             blendImg.onload = function() {
                 Pixastic.process(img, "blend", {
-                    amount: 3,
+                    amount: 1,
                     mode: "multiply",
                     rect: {
                         left: left,
@@ -277,17 +286,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }
         img.src = "<?php echo $row['image']; ?>";
 
-        img.setAttribute("style", "margin-top:-424px");
+        img.setAttribute("style", "margin-top:-524px");
         document.getElementById("image").appendChild(img);
 
         var wall = document.getElementById("wall");
         wall.remove();
         jcrop.destroy();
     }
-    function respond()
-    {
+
+    function respond() {
         console.log("=======================");
-document.getElementById("hiddenfield").value=localStorage.getItem('buttonname');
+        document.getElementById("hiddenfield").value = localStorage.getItem('buttonname');
         console.log(document.getElementById("hiddenfield").value);
         console.log("========================================");
     }
