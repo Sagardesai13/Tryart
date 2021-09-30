@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $filename = $_FILES["file"]["name"];
 
         $design_name = $_FILES["design_img"]["name"];
-       
+
        if(empty($design_name))
        {
             $design_name=$_POST["field"];
@@ -140,8 +140,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         background: #0275d8;
         cursor: pointer;
         border-radius: 20px;
-    }
 
+    }
+    a{color:white;
+    }
+a:hover{color:white;
+}
+a::after{color:white;
+}
     #upload {
         margin: auto;
         margin-top: 5%;
@@ -279,7 +285,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         <button type="submit" name="submit" id="upload">Make Your Wall</button>
                     </div>
                     <div class="help">
-                        <a>Help</a>
+                        <a href="help.php">Help</a>
                     </div>
                 </form>
 
