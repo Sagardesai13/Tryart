@@ -285,7 +285,7 @@ a::after{color:white;
                         <button type="submit" name="submit" id="upload">Make Your Wall</button>
                     </div>
                     <div class="help">
-                        <a href="help.php">Help</a>
+                        <a href="help.php" style="text-decoration: none">Help</a>
                     </div>
                 </form>
 
