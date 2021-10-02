@@ -43,6 +43,12 @@ function checkEmail($email) {
 if(isset($_POST['submit']))
 {
 
+	$var1 = rand(1111,9999);  // generate random number in $var1 variable
+    	$var2 = rand(1111,9999);  // generate random number in $var2 variable
+
+    	$var3 = $var1.$var2;  // concatenate $var1 and $var2 in $var3
+    	$var3 = md5($var3);   // convert $var3 using md5 function and generate 32 characters hex number
+
 	$allowed_extension = array('png', 'jpg', 'jpeg', 'gif');
 	$filename = $_FILES['file']['name'];
 	$file_extension = pathinfo($filename, PATHINFO_EXTENSION);
@@ -50,23 +56,23 @@ if(isset($_POST['submit']))
 	{
 		echo '<script>alert("Select an Image, Only png, jpg, jpeg, gif files are allowed"); window.location.href = "feedback/index.php";</script>';
 	}
+	else if (file_exists("uploads/". $_FILES['file']['name']))
+	{
+		$filename = $_FILES['file']['name'];
+		echo '<script>alert("Image is already exists"); window.location.href = "index.php";</script>';
+	}
 	else
 	{
-		$filename = $_FILES["file"]["name"];
-    	$tempname = $_FILES["file"]["tmp_name"];
-    	$folder = "uploads/".$filename;
-    	//echo "$folder";
-    	move_uploaded_file($tempname,$folder);
-       
+
 		if (empty($_POST['rating'])) 
 		{
 			echo '<script>alert("Please select a rating"); window.location.href = "index.php";</script>';
 		}
-    	else if (empty($_POST['name'])) 
+    		else if (empty($_POST['name']))
 		{
 			echo '<script>alert("Please enter a name"); window.location.href = "index.php";</script>';
 		}
-		else if (!preg_match ("/^[a-zA-z]*$/", $name) ) 
+		else if (!preg_match ("/^[a-zA-Z-' ]*$/", $name) )
 		{
 	  		echo '<script>alert("Please enter a valid name"); window.location.href = "index.php";</script>';
 		}
@@ -80,11 +86,23 @@ if(isset($_POST['submit']))
 		}
 		else if (!checkEmail($_POST['email'])) 
 		{
-    		echo '<script>alert("Email is already exists"); window.location.href = "index.php";</script>';
+    			echo '<script>alert("Email is already exists"); window.location.href = "index.php";</script>';
+		}
+		else if (empty($_POST['suggestion']))
+		{
+			echo '<script>alert("Please enter a feedback"); window.location.href = "index.php";</script>';
 		}
 		else
 		{	
-			$query ="insert into `feedback_form` (`Name`, `Email Id`, `Rating`,`Image`, `Feedback`)values('$name', '$email', '$rating', '$filename', '$feedback_txt')";
+			$filename = $_FILES["file"]["name"];
+    			$tempname = $_FILES["file"]["tmp_name"];
+    			$folder = "uploads/".$var3.$filename;
+    			//echo "$folder";
+    			$dst_db = "uploads/".$var3.$filename;
+    			//$dst_db = $var3.$filename;
+    			move_uploaded_file($tempname,$folder);
+
+			$query ="insert into `feedback_form` (`Name`, `Email Id`, `Rating`,`Image`, `Feedback`)values('$name', '$email', '$rating', '$dst_db', '$feedback_txt')";
 			$result = mysqli_query($conn, $query);
 			if (!$result) 
 			{

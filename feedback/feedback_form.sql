@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Sep 21, 2021 at 11:49 AM
+-- Generation Time: Sep 23, 2021 at 01:29 PM
 -- Server version: 8.0.21
 -- PHP Version: 7.3.21
 
@@ -33,18 +33,17 @@ CREATE TABLE IF NOT EXISTS `feedback_form` (
   `Name` varchar(255) NOT NULL,
   `Email Id` varchar(255) NOT NULL,
   `Rating` float NOT NULL,
-  `Image` blob NOT NULL,
+  `Image` varchar(255) NOT NULL,
   `Feedback` text NOT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `feedback_form`
 --
 
 INSERT INTO `feedback_form` (`Id`, `Name`, `Email Id`, `Rating`, `Image`, `Feedback`) VALUES
-(1, 'Ajay', 'Ajay123@gmail.com', 4.8, 0x686f6d652e6a7067, 'Excellent'),
-(2, 'aaaa', 'aaaa@gmail.com', 5, 0x696d672e6a7067, 'Nice');
+(1, 'aaa bbb ', 'a@gmail.com', 4.4, 'uploads/5d129a6b589f1c1d3886fd4e1fff3459img12.png', 'Excellent');
 COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

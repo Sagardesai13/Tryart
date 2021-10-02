@@ -1,6 +1,6 @@
 <?php
 $sname= "localhost";
-$unmae= "root";
+$uname= "root";
 $password = "";
 $db_name = "tryart";
 $conn = mysqli_connect($sname, $unmae, $password, $db_name);
@@ -66,7 +66,7 @@ echo "<br>"."Success";
         <td><?php echo $data['Name']; ?></td>
         <td><?php echo $data['Email Id']; ?></td>
         <td><?php echo $data['Rating']; ?></td>
-        <td><?php echo "<img src='uploads/".$data['Image']."' >"; ?></td>
+        <td><img src="<?php echo $data['Image']; ?>" width="100" height="100"></td>
         <td><?php echo $data['Feedback']; ?></td>
       </tr>
       <?php
