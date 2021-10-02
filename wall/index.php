@@ -7,6 +7,8 @@ if (!$conn){
     die("Sorry we failed to connect: ". mysqli_connect_error());
 }
 
+$showAlert = false;
+
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         $filename = $_FILES["file"]["name"];
@@ -18,19 +20,28 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $design_name=$_POST["field"];
        }
 
-    	$tempname = $_FILES["file"]["tmp_name"];
-        $temp1 = $_FILES["design_img"]["tmp_name"];
-        $folder = "uploads/".$filename;
-        $folder1 = "Designs/".$design_name;
+       if(empty($filename) || empty($design_name))
+       {
 
-    	$dst_db = "uploads/".$filename;
-        $dst_db1 = "Designs/".$design_name;
+            $showAlert = "Please Select Your Wall Or Design.";
+            
+       }
+       else
+       {
+            $tempname = $_FILES["file"]["tmp_name"];
+            $temp1 = $_FILES["design_img"]["tmp_name"];
+            $folder = "uploads/".$filename;
+            $folder1 = "Designs/".$design_name;
 
-        move_uploaded_file($tempname,$folder);
-        move_uploaded_file($temp1,$folder1);
+            $dst_db = "uploads/".$filename;
+            $dst_db1 = "Designs/".$design_name;
 
-        $query ="insert into `wall` (`image`,`design`)values('$dst_db','$dst_db1')";
-		$result = mysqli_query($conn, $query);
+            move_uploaded_file($tempname,$folder);
+            move_uploaded_file($temp1,$folder1);
+
+            $query ="insert into `wall` (`image`,`design`)values('$dst_db','$dst_db1')";
+            $result = mysqli_query($conn, $query);
+       }
     }
 ?>
 
@@ -47,6 +58,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/jcrop/dist/jcrop.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-jcrop/0.9.15/css/jquery.Jcrop.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -56,156 +68,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-jcrop/0.9.15/js/jquery.Jcrop.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <title>Make My Wall</title>
-    <style>
-    * {
-        padding: 0;
-        margin: 0;
-        font-family: sans-serif;
-    }
-
-    #image {
-        height: 510px;
-    }
-
-    .design {
-        height: 259px;
-    }
-
-    .container {
-        padding: 15px;
-        height: 540px;
-        background-color: white;
-        margin-top: 45px;
-        margin-bottom: 60px;
-    }
-
-    .file-upload-section {
-        margin: auto;
-        margin-top: 5%;
-        padding: 4px;
-        text-align: center;
-        background: #0275d8;
-        cursor: pointer;
-        border-radius: 20px;
-    }
-
-    #foto-file {
-        display: none;
-    }
-
-    #design_img {
-        display: none;
-    }
-
-    #dropdownMenuButton1 {
-        margin: auto;
-        margin-top: 5%;
-        font-weight: bold;
-        padding: 4px;
-        color: white;
-        text-align: center;
-        background: #0275d8;
-        cursor: pointer;
-        width: 255px;
-        border-radius: 20px;
-        border: none;
-    }
-
-    .dropdown ul {
-        margin: auto;
-        margin-top: 5%;
-        font-weight: bold;
-        padding: 4px;
-        color: white;
-        text-align: center;
-        background: #0275d8;
-        cursor: pointer;
-        width: 262px;
-        border-radius: 20px;
-    }
-
-    .dropdown ul li a {
-        text-align: center;
-        font-weight: bold;
-        color: white;
-    }
-
-    .help {
-        margin: auto;
-        margin-top: 5%;
-        font-weight: bold;
-        padding: 4px;
-        color: white;
-        text-align: center;
-        background: #0275d8;
-        cursor: pointer;
-        border-radius: 20px;
-
-    }
-    a{color:white;
-    }
-a:hover{color:white;
-}
-a::after{color:white;
-}
-    #upload {
-        margin: auto;
-        margin-top: 5%;
-        font-weight: bold;
-        padding: 4px;
-        color: white;
-        text-align: center;
-        background: #0275d8;
-        cursor: pointer;
-        width: 255px;
-        border: none;
-        border-radius: 20px;
-    }
-
-    .amount label {
-        margin: auto;
-        margin-top: 5%;
-        font-weight: bold;
-        padding: 4px;
-        color: black;
-        text-align: center;
-    }
-
-    .design_name {
-        margin: auto;
-        margin-top: 17%;
-        font-weight: bold;
-        padding: 4px;
-        color: black;
-    }
-
-    #design {
-        max-height: 259px;
-    }
-
-    .design {
-        overflow: hidden;
-    }
-
-    #wall {
-        max-height: 440px;
-        max-width: 360px;
-        z-index: 1;
-        /* margin-left: -20px;
-        margin-top: -5px;*/
-    }
-
-    #image {
-        overflow-y: hidden;
-        overflow-x: hidden;
-    }
-
-    #image1 {
-        margin-left: 700px;
-        margin-top: -510px;
-        height: 507px;
-    }
-    </style>
 </head>
 
 <body>
@@ -239,6 +101,17 @@ a::after{color:white;
         </div>
     </nav>
 
+    <?php
+
+    if($showAlert){
+        echo "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+            <strong>Error!</strong> $showAlert
+            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+        </div>";
+    }
+    
+    ?>
+
     <div class="container">
         <div class="row">
             <div class="col-4" id="image" style="margin-left:30px;">
@@ -268,9 +141,7 @@ a::after{color:white;
                             </li>
                             <li>
                                 <input type="file" id="design_img" name="design_img">
-                                <label for="design_img" class="btn btn-large" style="text-align: center;
-                                            font-weight: bold;
-                                            color: white;">Select from this device</label>
+                                <label for="design_img" class="btn btn-large">Select from this device</label>
                             </li>
                         </ul>
                     </div>

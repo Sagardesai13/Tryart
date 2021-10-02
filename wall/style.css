@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#image {
+    height: 510px;
+}
+
+.design {
+    height: 259px;
+}
+
+.container {
+    padding: 15px;
+    height: 540px;
+    background-color: white;
+    margin-top: 45px;
+    margin-bottom: 60px;
+}
+
+.file-upload-section {
+    margin: auto;
+    margin-top: 5%;
+    padding: 4px;
+    text-align: center;
+    background: #0275d8;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#foto-file {
+    display: none;
+}
+
+#design_img {
+    display: none;
+}
+
+#dropdownMenuButton1 {
+    margin: auto;
+    margin-top: 5%;
+    font-weight: bold;
+    padding: 4px;
+    color: white;
+    text-align: center;
+    background: #0275d8;
+    cursor: pointer;
+    width: 255px;
+    border-radius: 20px;
+    border: none;
+}
+
+.dropdown ul {
+    margin: auto;
+    margin-top: 5%;
+    font-weight: bold;
+    padding: 4px;
+    color: white;
+    text-align: center;
+    background: #0275d8;
+    cursor: pointer;
+    width: 262px;
+    border-radius: 20px;
+}
+
+.dropdown ul li a {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.help {
+    margin: auto;
+    margin-top: 5%;
+    font-weight: bold;
+    padding: 4px;
+    color: white;
+    text-align: center;
+    background: #0275d8;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+a::after {
+    color: white;
+}
+
+.dropdown ul li label {
+    width: 253px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.dropdown ul li label:hover {
+    font-weight: bold;
+    background: white;
+    color: black;
+}
+
+#upload {
+    margin: auto;
+    margin-top: 5%;
+    font-weight: bold;
+    padding: 4px;
+    color: white;
+    text-align: center;
+    background: #0275d8;
+    cursor: pointer;
+    width: 255px;
+    border: none;
+    border-radius: 20px;
+}
+
+.design_name {
+    margin: auto;
+    margin-top: 17%;
+    font-weight: bold;
+    padding: 4px;
+    color: black;
+}
+
+#design {
+    max-height: 259px;
+}
+
+.design {
+    overflow: hidden;
+}
+
+#wall {
+    max-height: 440px;
+    max-width: 360px;
+    z-index: 1;
+    /* margin-left: -20px;
+    margin-top: -5px;*/
+}
+
+#image {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#image1 {
+    margin-left: 700px;
+    margin-top: -510px;
+    height: 507px;
+}
