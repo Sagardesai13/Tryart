@@ -243,7 +243,7 @@ a::after{color:white;
         <div class="row">
             <div class="col-4" id="image" style="margin-left:30px;">
                 <h3 style="text-align: center">Your Selected Wall</h3>
-                <div class="col-5">
+                <div>
 
                     <?php
                             $sql="select  * from wall ORDER BY sno DESC";
