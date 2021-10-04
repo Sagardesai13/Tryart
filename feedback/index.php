@@ -15,6 +15,8 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
     <!-- Custom CSS file -->
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
         integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
@@ -111,16 +113,16 @@
                 <hr class="width:60% margin-left:auto margin-right:auto" />
             </h2>
         </div>
-        <table class="table">
-            <tbody>
-                <?php
+
+<div class="container-fluid">
+            <div class="row">
+               <?php
             include('register.php');
             $sql="select  *from feedback_form";
             $res=mysqli_query($conn,$sql);
             while($row=mysqli_fetch_assoc($res)){
             ?>
-                <hr class="width:60% margin-left:auto margin-right:auto" />
-                <p>
+               <div class="col-lg-4 col-md-4 col-12" >
                     Name:<?php
             $html=$row['Name'];
             echo $html;?><br>Rating:<?php
@@ -130,10 +132,11 @@
             echo $html;?><br>Image:<?php
             	$html=$row['Image']; ?><br>
                     <img style="height:200px;width:200px;"
-                        src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['Image']); ?>" />
-                    <?php } ?>
-                    </div>
-        </table>
+                        src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['Image']); ?>" class"img-fluid pb-4"  />
+                </p>  </div> <?php } ?>
+
+</div>
+</div>
     </section>
 
     <footer>

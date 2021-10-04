@@ -224,7 +224,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
             {
                 console.log("Working");
                 localStorage.setItem("buttonname",name);
-                window.location.href="http://localhost:8020/Tryart/wall/index.php";
+                window.location.href="http://localhost:8020/Tested/wall/index.php";
             }
 
     </script>

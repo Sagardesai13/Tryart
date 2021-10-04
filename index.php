@@ -292,9 +292,8 @@
                 });
          }
          else
-         {
-            $('#verify_captcha').addClass("btn btn-danger").text("Not Matched");
-            $("#captcha_id").prop('disabled', true);
+         {$('#verify_captcha').addClass("btn btn-success disabled").text("not-Verified");
+                    $('#verify_captcha').attr("disabled", true);
             setTimeout(
               function()
                 {    //disable

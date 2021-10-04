@@ -12,18 +12,26 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <title>About Us</title>
+    <title>A New Wall</title>
 </head>
 
-<body style="height:0;">
+<body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Tryart</a>
+            <a class="navbar-brand" href="#">A New Wall</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -52,17 +60,68 @@
         </div>
     </nav>
     <div class="bg-light">
-        <div class="container py-5">
-            <div class="row h-100 align-items-center py-5">
-                <div class="col-lg-6">
-                    <h1 class="display-4">About us </h1>
+        <div class="container py-5" >
+                    <h1 class="display-4" style="text-align:center;">About us </h1>
                 </div>
-                <div class="col-lg-6 d-none d-lg-block"><img
-                        src="https://res.cloudinary.com/mhmd/image/upload/v1556834136/illus_kftyh4.png" alt=""
-                        class="img-fluid"></div>
+        </div>
+    </div>
+
+    <div class="bg-white py-5">
+        <div class="container py-5">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 order-2 order-lg-1">
+                                <h2 class="font-weight-light">Welcome to A New Wall</h2>
+                    <p class=" mb-4" style="text-align:justify">Welcome to A New Wall, your number one source for
+                        paintting service.authors of this organization is Shruti Jagtap and Sagar Desai. We are
+                        dedicated to providing you the very best of wall painting, with an emphasis on artistic work,
+                        wall decoration.
+                        A new Wall has come a long way from its beginnings in Ahemedabad. When Shruti Jagtap and Sagar
+                        Desai first started out, their passion for artistic work drove them to start their own business.
+                        We hope you enjoy our service as much as we enjoy offering them to you.</p>
+                </div>
+                <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="image/myself2.jpeg" alt=""
+                        class="img-fluid mb-4 mb-lg-0"></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 mx-auto"><img src="image/myself1.jpeg" alt="" class="img-fluid mb-4 mb-lg-0">
+                </div>
+                <div class="col-lg-6">
+                <h2 class="font-weight-light">Our Story</h2>
+                    <p class="text-justify text-muted mb-4" style="text-align:justify">This organization is for
+                        craftsman who needs to show their specialty and were giving them work. this thought came from
+                        seeing a craftsman searching for work we wanted to help them. These days individuals like their
+                        home to look current even little dividers can look present day. We give them preparing and do
+                        rehearse all the more so that individuals can have good outcomes. We propose plans to our
+                        customer also we give fundamental beautifications to divider. We don't turn out just for cash,
+                        we likewise work for to show our ability. If you have any questions or comments, please don't
+                        hesitate to contact us</p>
+                    <p>
+                    </p>
+                    <a href="index.php#contactus" class="btn btn-light px-5 rounded-pill shadow-sm">Contact Us</a>
+                 </div>
             </div>
         </div>
     </div>
+<div class="w3-col s4 w3-justify" >
+        <p><i class="fa fa-fw fa-map-marker"></i> TryArt</p>
+        <p><i class="fa fa-fw fa-phone"></i> 9100000000</p>
+        <p><i class="fa fa-fw fa-envelope"></i> anewall0@mail.com</p>
+
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div></p>
+
+    <footer class="bg-dark py-3" style="text-white">
+        <div class="container text-center">
+            <p class="text-white">By @affairofcolors.</p>
+<p></div>
+        </div>
+    </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
