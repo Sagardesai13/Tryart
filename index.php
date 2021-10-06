@@ -219,7 +219,7 @@
                     <h2 class="text-center" id="contactus">Contact Us</h2>
                     <form action="" name="form1" method="post"
                         style="display:flex; flex-direction:column; align-items:center;">
-                        <div class="form-group" style="width:315px;">
+                        <div class="form-group" style="width:330px;">
                             <label> Phone number </label>
                             <input type="number" name="mobile" required autocomplete="off" class="form-control">
                             <label> Name </label>
@@ -233,7 +233,7 @@
             <label>Code</label>
 			<?php  $string = "abc123";  ?>
         <strong><i><h4 id="captcha" style="margin-top:-36px;margin-left:50px;position: absolute;"><?php echo str_shuffle($string) ?></h4></i></strong><img src="image/captcha.jpg" height="40" width="130;">
-                   &nbsp;&nbsp;<button type="button" id="verify_captcha"  class="btn btn-primary ml-3 ">Verify</button>
+                   &nbsp;&nbsp;<button type="button" id="verify_captcha"  class="btn btn-primary ml-3 " style="width:120px">Verify</button>
                             <div class="pt-3 text-center">
                                 <button type="submit" class="btn  btn-outline-dark"
 

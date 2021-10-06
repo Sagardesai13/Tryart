@@ -31,7 +31,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">A New Wall</a>
+            <a class="navbar-brand" href="#">Tryart</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -118,7 +118,7 @@
 
     <footer class="bg-dark py-3" style="text-white">
         <div class="container text-center">
-            <p class="text-white">By @affairofcolors.</p>
+            <p class="text-white">Created By @TeamTryart</p>
 <p></div>
         </div>
     </footer>
