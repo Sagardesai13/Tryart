@@ -197,7 +197,7 @@
                     <img src="image/img2.jpg" class="img-fluid pb-4">
                 </div>
                 <div class="col-lg-4 col-md-4 col-12">
-                    <img src="image/img18.jfif" class="img-fluid pb-4">
+                    <img src="image/img18.jfif" style="height:654px;" class="img-fluid pb-4">
                 </div>
                 <div class="col-lg-4 col-md-4 col-12">
                     <img src="image/img3.jpg" class="img-fluid pb-4">
@@ -206,10 +206,10 @@
                     <img src="image/img9.jpg" class="img-fluid pb-4">
                 </div>
                 <div class="col-lg-4 col-md-4 col-12">
-                    <img src="image/img46.jpg" class="img-fluid pb-4">
+                    <img src="image/img46.jpg" style="height:445px; width: 449px;" class="img-fluid pb-4">
                 </div>
                 <div class="col-lg-4 col-md-4 col-12">
-                    <img src="image/img8.jpg" class="img-fluid pb-4">
+                    <img src="image/img8.jpg" style="height:445px;" class="img-fluid pb-4">
                 </div>
             </div>
         </div>
@@ -219,7 +219,7 @@
                     <h2 class="text-center" id="contactus">Contact Us</h2>
                     <form action="" name="form1" method="post"
                         style="display:flex; flex-direction:column; align-items:center;">
-                        <div class="form-group" style="width:330px;">
+                        <div class="form-group" style="width:315px;">
                             <label> Phone number </label>
                             <input type="number" name="mobile" required autocomplete="off" class="form-control">
                             <label> Name </label>
@@ -228,17 +228,19 @@
                             <input type="text" required name="adress" autocomplete="off" class="form-control">
                             <label> Email </label>
                             <input type="email" name="email" required autocomplete="off" class="form-control">
-                            					<label> Captcha Code </label>
-				                            <input type="text" name="captcha" required autocomplete="off" class="form-control" id="captcha_id"></br>
-            <label>Code</label>
-			<?php  $string = "abc123";  ?>
-        <strong><i><h4 id="captcha" style="margin-top:-36px;margin-left:50px;position: absolute;"><?php echo str_shuffle($string) ?></h4></i></strong><img src="image/captcha.jpg" height="40" width="130;">
-                   &nbsp;&nbsp;<button type="button" id="verify_captcha"  class="btn btn-primary ml-3 " style="width:120px">Verify</button>
+                            <label> Captcha Code </label>
+                            <input type="text" name="captcha" required autocomplete="off" class="form-control"
+                                id="captcha_id"></br>
+                            <label>Code</label>
+                            <?php  $string = "abc123";  ?>
+                            <strong><i>
+                                    <h4 id="captcha" style="margin-top:-36px;margin-left:50px;position: absolute;">
+                                        <?php echo str_shuffle($string) ?></h4>
+                                </i></strong><img src="image/captcha.jpg" height="40" width="130;">
+                            &nbsp;&nbsp;<button type="button" id="verify_captcha"
+                                class="btn btn-primary ml-3 ">Verify</button>
                             <div class="pt-3 text-center">
                                 <button type="submit" class="btn  btn-outline-dark"
-
-
-
                                     onclick="phonenumber(document.form1.mobile)">call back</button>
                             </div>
                         </div>
@@ -249,7 +251,7 @@
         <br>
         <footer>
             <div>
-                <p class="p-3  bg-dark text-white text-center">  Created By @TeamTryart</p>
+                <p class="p-3  bg-dark text-white text-center"> Created By @TeamTryart</p>
             </div>
         </footer>
         <script type="text/javascript">
@@ -276,35 +278,32 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     -->
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-    $(document).ready(function() {
-     $("#verify_captcha").click(function(){
-        var captcha_id = $("#captcha_id").val();
-        var captchID = $("#captcha").text();
-         if(captcha_id == captchID)
-         {
-            setTimeout(
-              function()
-                {    //disable
-                    $('#verify_captcha').addClass("btn btn-success disabled").text("Verified");
-                    $('#verify_captcha').attr("disabled", false);
-                });
-         }
-         else
-         {$('#verify_captcha').addClass("btn btn-danger disabled").text("Not Verified");
-                    $('#verify_captcha').attr("disabled", true);
-            setTimeout(
-              function()
-                {    //disable
-                    $('#captcha_id').val("");
-                    $("#captcha_id").prop('disabled', false);
-                    $('#verify_captcha').removeClass("btn btn-danger").text("Verify Code");
-                }, 1500);
-         }
-      });
-    });
-</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function() {
+            $("#verify_captcha").click(function() {
+                var captcha_id = $("#captcha_id").val();
+                var captchID = $("#captcha").text();
+                if (captcha_id == captchID) {
+                    setTimeout(
+                        function() { //disable
+                            $('#verify_captcha').addClass("btn btn-success disabled").text(
+                                "Verified");
+                            $('#verify_captcha').attr("disabled", false);
+                        });
+                } else {
+                    $('#verify_captcha').addClass("btn btn-danger").text("Not Matched");
+                    $("#captcha_id").prop('disabled', true);
+                    setTimeout(
+                        function() { //disable
+                            $('#captcha_id').val("");
+                            $("#captcha_id").prop('disabled', false);
+                            $('#verify_captcha').removeClass("btn btn-danger").text("Verify Code");
+                        }, 1500);
+                }
+            });
+        });
+        </script>
 </body>
 
 </html>
