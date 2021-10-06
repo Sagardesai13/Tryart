@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -43,13 +43,13 @@
                         <a class="nav-link" aria-current="page" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php#aboutus">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.php#ourservice">Our Servicies</a>
+                        <a class="nav-link" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.php#gallary">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback/index.php">Feedback</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.php#contactus">Contact Us</a>
@@ -60,17 +60,17 @@
         </div>
     </nav>
     <div class="bg-light">
-        <div class="container py-5" >
-                    <h1 class="display-4" style="text-align:center;">About us </h1>
-                </div>
+        <div class="container py-5">
+            <h1 class="display-4" style="text-align:center;">About us </h1>
         </div>
+    </div>
     </div>
 
     <div class="bg-white py-5">
         <div class="container py-5">
             <div class="row align-items-center mb-5">
                 <div class="col-lg-6 order-2 order-lg-1">
-                                <h2 class="font-weight-light">Welcome to A New Wall</h2>
+                    <h2 class="font-weight-light">Welcome to A New Wall</h2>
                     <p class=" mb-4" style="text-align:justify">Welcome to A New Wall, your number one source for
                         paintting service.authors of this organization is Shruti Jagtap and Sagar Desai. We are
                         dedicated to providing you the very best of wall painting, with an emphasis on artistic work,
@@ -86,7 +86,7 @@
                 <div class="col-lg-5 px-5 mx-auto"><img src="image/myself1.jpeg" alt="" class="img-fluid mb-4 mb-lg-0">
                 </div>
                 <div class="col-lg-6">
-                <h2 class="font-weight-light">Our Story</h2>
+                    <h2 class="font-weight-light">Our Story</h2>
                     <p class="text-justify text-muted mb-4" style="text-align:justify">This organization is for
                         craftsman who needs to show their specialty and were giving them work. this thought came from
                         seeing a craftsman searching for work we wanted to help them. These days individuals like their
@@ -98,11 +98,11 @@
                     <p>
                     </p>
                     <a href="index.php#contactus" class="btn btn-light px-5 rounded-pill shadow-sm">Contact Us</a>
-                 </div>
+                </div>
             </div>
         </div>
     </div>
-<div class="w3-col s4 w3-justify" >
+    <div class="w3-col s4 w3-justify">
         <p><i class="fa fa-fw fa-map-marker"></i> TryArt</p>
         <p><i class="fa fa-fw fa-phone"></i> 9100000000</p>
         <p><i class="fa fa-fw fa-envelope"></i> anewall0@mail.com</p>
@@ -114,12 +114,14 @@
         <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
         <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
         <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
-      </div></p>
+    </div>
+    </p>
 
     <footer class="bg-dark py-3" style="text-white">
         <div class="container text-center">
             <p class="text-white">Created By @TeamTryart</p>
-<p></div>
+            <p>
+        </div>
         </div>
     </footer>
 

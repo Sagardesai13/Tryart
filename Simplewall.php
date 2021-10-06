@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Tryart</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -38,10 +38,10 @@
                         <a class="nav-link" href="index.php#aboutus">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php#ourservice">Our Servicies</a>
+                        <a class="nav-link" href="index.php#gallary">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php#gallary">Gallery</a>
+                        <a class="nav-link" href="feedback/index.php">Feedback</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.php#contactus">Contact Us</a>
