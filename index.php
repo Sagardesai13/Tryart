@@ -298,7 +298,7 @@
                         function() { //disable
                             $('#captcha_id').val("");
                             $("#captcha_id").prop('disabled', false);
-                            $('#verify_captcha').removeClass("btn btn-danger").text("Verify Code");
+                            $('#verify_captcha').removeClass("btn btn-danger").addClass("btn btn-primary ml-3 ").text("Verify Code");
                         }, 1500);
                 }
             });
