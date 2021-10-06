@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="074f6793-c613-43d5-962f-f5c7cf45e30d" name="Changes" comment="Gallery">
-      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aboutus.php" beforeDir="false" afterPath="$PROJECT_DIR$/aboutus.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feedback/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/feedback/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wall/Designs/img4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wall/Designs/img4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wall/Gallery_for_design.php" beforeDir="false" afterPath="$PROJECT_DIR$/wall/Gallery_for_design.php" afterDir="false" />
-    </list>
+    <list default="true" id="074f6793-c613-43d5-962f-f5c7cf45e30d" name="Changes" comment="Gallery" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +10,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="fenil" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
