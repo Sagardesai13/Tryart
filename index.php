@@ -293,12 +293,12 @@
                         });
                 } else {
                     $('#verify_captcha').addClass("btn btn-danger disabled").text("Not Verified");
-                    $('#verify_captcha').attr("disabled", true);
+                    $('#captcha_id').attr("disabled", true);
                     setTimeout(
                         function() { //disable
                             $('#captcha_id').val("");
                             $("#captcha_id").prop('disabled', false);
-                            $('#verify_captcha').removeClass("btn btn-danger").addClass("btn btn-primary ml-3 ").text("Verify");
+                            $('#verify_captcha').removeClass("btn btn-danger").text("Verify");
                         }, 1500);
                 }
             });
