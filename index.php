@@ -224,7 +224,7 @@
                             <input type="number" name="mobile" required autocomplete="off" class="form-control">
                             <label> Name </label>
                             <input type="text" required name="name" autocomplete="off" class="form-control">
-                            <label> Adress </label>
+                            <label> Address </label>
                             <input type="text" required name="adress" autocomplete="off" class="form-control">
                             <label> Email </label>
                             <input type="email" name="email" required autocomplete="off" class="form-control">
